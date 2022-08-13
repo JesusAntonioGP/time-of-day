@@ -100,30 +100,29 @@
 	let myGreeting = "";
 	let myColor = "";
 	let myPic = "";
+	
 
 
 myDate = new Date(); 
 myHour = myDate.getHours();
+console.log(myDate);
+alert(myDate);
 
-//  myHour = 6;
+ myHour = 24;
 //create the good morning 5-12 portion 
-if (myHour < 12) {
+if (myHour > 5 && myHour < 12) {
 
 	// alert("good morning!");
 	myGreeting = "Good morning";
 	myColor = "yellow";
 	myPic = ""
-}else{
+}else if (myHour > 12 && myHour < 18){
 
 	// alert("good afternoon!");
 	myGreeting = "Good Afternoon";
 	myColor = "orange";
 	myPic = 'afternoon.jpg';
-} 
-
-
-
-if (myHour > 18) {
+}else if (myHour > 18 && myHour < 24) {
 
 // alert("good evening!");
 myGreeting = "Good evening";
